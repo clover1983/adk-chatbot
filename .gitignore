@@ -1,0 +1,9 @@
+__pycache__/
+chat_history/
+poetry.lock
+*.tgz
+.env
+.env_np
+.env_pr
+sessions.db
+adk-chatbot

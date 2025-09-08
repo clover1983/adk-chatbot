@@ -1,0 +1,42 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "AI-driven chat-bot demo"
+authors = [{ name = "Lili Wang", email = "lily.wang@telus.com" }]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{ include = "app" }]
+requires-python = ">=3.12"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-cloud-aiplatform = { version = "^1.93.0", extras = [
+    "adk",
+    "agent-engines",
+] }
+google-genai = "^1.9.0"
+pydantic = "^2.11.7"
+python-dotenv = "^1.0.1"
+google-adk = "^1.13.0"
+litellm = "^1.75.5.post1"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.13"
+pytz = "^2025.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+pytest-asyncio = "^0.26.0"
+
+[tool.poetry.group.deployment]
+optional = true
+
+[tool.poetry.group.deployment.dependencies]
+absl-py = "^2.2.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
