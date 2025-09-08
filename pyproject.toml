@@ -2,7 +2,7 @@
 name = "app"
 version = "0.1.0"
 description = "AI-driven chat-bot demo"
-authors = [{ name = "Lili Wang", email = "lily.wang@telus.com" }]
+authors = [{ name = "Lili Wang", email = "clover1983@hotmail.com" }]
 license = "Apache License 2.0"
 readme = "README.md"
 packages = [{ include = "app" }]
